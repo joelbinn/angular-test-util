@@ -1,0 +1,44 @@
+{
+  "name": "angular-test-util",
+  "version": "1.0.0",
+  "description": "Test utilities for Angular",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "clean": "rimraf -rf ./lib",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@angular/core": "^8.2.14",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "rxjs": "^6.5.3",
+    "shallow-render": "^8.5.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.5.3",
+    "@angular/core": "^8.2.14",
+    "shallow-render": "^8.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelbinn/angular-test-util.git"
+  }
+}
