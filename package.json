@@ -23,7 +23,7 @@
     "lib/**/*"
   ],
   "devDependencies": {
-    "@angular/core": "^8.2.14",
+    "@angular/core": "^11.0.5",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
@@ -34,7 +34,7 @@
   },
   "peerDependencies": {
     "rxjs": "^6.5.3",
-    "@angular/core": "^8.2.14",
+    "@angular/core": "^11.0.5",
     "shallow-render": "^8.5.1"
   },
   "repository": {
